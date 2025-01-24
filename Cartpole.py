@@ -14,6 +14,7 @@ from DeepQAgent import DeepAgent, plot_learning_curve
 env = gym.make("CartPole-v1")
 
 n_games = 50_000	#Number of games
+step = 0		#Steps counter
 best_score = -math.inf	#Track the current best score. 500 is the max
 scores = []		#Store score of each episode
 avg_scores = []		#Store the average score over last 100 episodes
